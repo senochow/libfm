@@ -72,7 +72,6 @@ int main(int argc, char **argv) {
 		std::cout << "This is free software, and you are welcome to redistribute it under certain" << std::endl;
 		std::cout << "conditions; for details see license.txt." << std::endl;
 		std::cout << "----------------------------------------------------------------------------" << std::endl;
-		
 		const std::string param_task		= cmdline.registerParameter("task", "r=regression, c=binary classification [MANDATORY]");
 		const std::string param_meta_file	= cmdline.registerParameter("meta", "filename for meta information about data set");
 		const std::string param_train_file	= cmdline.registerParameter("train", "filename for training data [MANDATORY]");
