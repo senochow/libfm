@@ -56,6 +56,7 @@ class fm_learn_sgd_element: public fm_learn_sgd {
 						p = std::max(min_target, p);
 						mult = -(train.target(train.data->getRowIndex())-p);
 					} else if (task == 1) {
+						// -y(1-sigmid(y'*y))
 						mult = -train.target(train.data->getRowIndex())*(1.0-1.0/(1.0+exp(-train.target(train.data->getRowIndex())*p)));
 					}				
 					SGD(train.data->getRow(), mult, sum);					

@@ -91,7 +91,7 @@ int main(int argc, char **argv) {
 		const std::string param_r_log		= cmdline.registerParameter("rlog", "write measurements within iterations to a file; default=''");
 		const std::string param_seed		= cmdline.registerParameter("seed", "integer value, default=None");
 
-		const std::string param_help            = cmdline.registerParameter("help", "this screen");
+		const std::string param_help        = cmdline.registerParameter("help", "this screen");
 
 		const std::string param_relation	= cmdline.registerParameter("relation", "BS: filenames for the relations, default=''");
 
